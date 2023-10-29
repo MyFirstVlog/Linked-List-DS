@@ -20,12 +20,13 @@ describe('Bubble sort', () => {
 
 describe('Selection sort', () => {
   test('sorts an array', () => {
+    console.log("lo que llego", selectionSort(getArray()));
     expect(selectionSort(getArray())).toEqual(getSortedArray());
   });
 });
 
-describe('Merge sort', () => {
-  test('merge function can join together two sorted arrays', () => {
+describe.only('Merge sort', () => {
+  test.only('merge function can join together two sorted arrays', () => {
     const left = [1, 10];
     const right = [2, 8, 12];
 
